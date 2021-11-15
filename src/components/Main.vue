@@ -17,6 +17,8 @@ export default {
 <style lang="scss">
 @import "../assets/scss/variables.scss";
 .main {
+  height: calc(100vh - 75px);
   background-color: $primary;
+  overflow-x: hidden;
 }
 </style>

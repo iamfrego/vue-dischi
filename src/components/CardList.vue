@@ -1,9 +1,13 @@
 <template>
-  <div class="row row-cols-6">
+  <div class="row row-cols-6 justify-content-center pt-3 g-5">
     <div class="col" v-for="music in musics" :key="music.title">
-      <div class="music my-4">
-        <img :src="music.poster" :alt="music.title" class="img-fluid" />
-        <p class="title text-center text-white">{{ music.title }}</p>
+      <div class="music mt-5">
+        <div class="image d-flex justify-content-center pt-5">
+          <img :src="music.poster" :alt="music.title" class="img-fluid" />
+        </div>
+        <p class="title text-center text-white text-uppercase">
+          {{ music.title }}
+        </p>
         <p class="author text-center">{{ music.author }}</p>
         <p class="years text-center">{{ music.year }}</p>
       </div>
@@ -33,15 +37,25 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/variables.scss";
-.row {
-  overflow-x: hidden;
-}
 
 .music {
   background-color: $secondary;
-  height: 350px;
+  height: 100%;
+  width: 75%;
+  margin: auto;
 
   img {
+    width: 50%;
+  }
+
+  p {
+    color: gray;
+  }
+
+  .title {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
   }
 }
 </style>
