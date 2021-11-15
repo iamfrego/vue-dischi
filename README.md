@@ -22,3 +22,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Required
+
+-BootStrap
+
+-Axios = "https://flynn.boolean.careers/exercises/api/array/music"
+
