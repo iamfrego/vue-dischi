@@ -20,5 +20,6 @@ export default {
   height: calc(100vh - 75px);
   background-color: $primary;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 </style>
