@@ -1,11 +1,22 @@
 <template>
-  <div class="main"></div>
+  <div class="main">
+    <CardList />
+  </div>
 </template>
 
 
 <script>
-export default {};
+import CardList from "./CardList.vue";
+export default {
+  components: {
+    CardList,
+  },
+};
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/scss/variables.scss";
+.main {
+  background-color: $primary;
+}
 </style>
