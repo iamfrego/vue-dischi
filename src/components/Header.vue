@@ -1,11 +1,15 @@
 <template>
-  <div class="header">
+  <div class="header d-flex justify-content-between">
     <img src="../assets/image/Spotify-Logo.svg" alt="Logo" />
+    <Selector />
   </div>
 </template>
 
 <script>
-export default {};
+import Selector from "./Selector.vue";
+export default {
+  components: { Selector },
+};
 </script>
 
 <style lang="scss">
