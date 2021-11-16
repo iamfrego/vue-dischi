@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Selector @filter-genre="filteredSelect" :musics="musics" />
+    <Selector @filtered-genre="filteredSelect" :musics="musics" />
     <div class="row row-cols-6 justify-content-center pt-3 g-5" v-if="!loading">
       <div class="col" v-for="music in filteredGenre" :key="music.title">
         <div class="music mt-5">
