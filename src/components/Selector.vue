@@ -1,17 +1,28 @@
 <template>
-  <div class="selector">
-    <label>Choose a genre</label>
-    <select name="genre" id="" class="mx-3">
-      <option value="">Rock</option>
-      <option value="">Pop</option>
-      <option value="">Jazz</option>
-      <option value="">Metal</option>
+  <div class="selector text-center">
+    <label for="select">Choose a genre</label>
+    <select
+      id="select"
+      class="mx-3"
+      v-model="genreSelect"
+      @change="$emit('filtered-genre', genreSelect)"
+    >
+      <option value="Rock">Rock</option>
+      <option value="Pop">Pop</option>
+      <option value="Jazz">Jazz</option>
+      <option value="Metal">Metal</option>
     </select>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      genreSelect: "",
+    };
+  },
+};
 </script>
 
 <style lang="scss">
